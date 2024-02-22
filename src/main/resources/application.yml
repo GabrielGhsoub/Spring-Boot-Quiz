@@ -1,0 +1,8 @@
+server:
+  port: 8080
+
+spring:
+  profiles:
+    active: h2  # Change this to 'mysql' or 'h2' as needed
+  application:
+    name: SALES-MANAGEMENT-SYSTEM
