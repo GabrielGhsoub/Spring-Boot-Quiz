@@ -32,6 +32,7 @@ CREATE TABLE IF NOT EXISTS transactions (
     product_id INT,
     quantity INT NOT NULL,
     price DECIMAL(10, 2) NOT NULL,
+    is_deleted BOOLEAN DEFAULT FALSE,
     FOREIGN KEY (sale_id) REFERENCES sales(id),
     FOREIGN KEY (product_id) REFERENCES products(id)
 );
